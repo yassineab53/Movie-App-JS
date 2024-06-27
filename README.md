@@ -2,6 +2,8 @@
 
 Simple movie search application using HTML, CSS, and JavaScript.
 
+FR : Application web qui utilise l'API The Movie Database (TMDb) pour afficher des informations sur des films
+
 ## Description
 
 Movie App allows users to search for movies using The Movie Database (TMDb) API. Users can view movie details including title, rating, and overview.

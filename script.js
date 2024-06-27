@@ -7,7 +7,6 @@ const form = document.getElementById('form');
 const search = document.getElementById('search');
 const loader = document.getElementById('loader');
 
-
 getMovies(YOUR_API_KEY);
 
 async function getMovies(url) {
