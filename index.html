@@ -5,17 +5,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHq+6FjE6Ugo5tb+57XG5D6R+y3Z+mVqn2I2swZ0i4tP4xkZ4gMO/sDpSt2ULvvl24+i5Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Movie App</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <i class="fas fa-film"></i> Movie App
+        </div>
         <form id="form" role="search">
-            <input type="text" id="search" class="search" placeholder="Search" aria-label="Search movies">
+            <input type="text" id="search" class="search" placeholder="Search movies..." aria-label="Search movies">
+            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
         </form>
     </header>
 
     <main id="main" role="main"></main>
+
+    <div class="loader" id="loader">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
 
     <script src="script.js"></script>
 </body>
