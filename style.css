@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 :root {
     --primary-color: #22254b;
@@ -7,6 +8,7 @@
     --green-color: lightgreen;
     --orange-color: orange;
     --red-color: red;
+    --hover-bg-color: #505483;
 }
 
 * {
@@ -24,8 +26,20 @@ body {
 header {
     padding: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 0.5rem;
 }
 
 .search {
@@ -35,15 +49,22 @@ header {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     color: var(--white-color);
-}
-
-.search::placeholder {
-    color: #7378c5;
+    width: 200px;
+    transition: width 0.3s ease;
 }
 
 .search:focus {
     outline: none;
-    background-color: var(--primary-color);
+    width: 300px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
 }
 
 main {
@@ -65,6 +86,7 @@ main {
 
 .movie:hover {
     transform: scale(1.05);
+    background-color: var(--hover-bg-color);
 }
 
 .movie img {
@@ -118,4 +140,14 @@ main {
 
 .movie:hover .overview {
     transform: translateY(0);
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--white-color);
 }
