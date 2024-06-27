@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 :root {
     --primary-color: #22254b;
     --secondary-color: #373b69;
-    --white-color: #ffffff;
+    --accent-color: #fca311;
+    --background-color: #f0f0f0;
+    --text-color: #333;
     --green-color: lightgreen;
     --orange-color: orange;
     --red-color: red;
