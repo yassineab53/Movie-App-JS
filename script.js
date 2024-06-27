@@ -5,11 +5,13 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c
 const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
+const loader = document.getElementById('loader');
 
 // Get initial movies
 getMovies(API_URL);
 
 async function getMovies(url) {
+    showLoader();
     try {
         const res = await fetch(url);
         const data = await res.json();
@@ -18,6 +20,8 @@ async function getMovies(url) {
     } catch (error) {
         console.error('Error fetching data:', error);
         main.innerHTML = '<p class="error-message">Failed to load movies. Please try again later.</p>';
+    } finally {
+        hideLoader();
     }
 }
 
@@ -67,3 +71,11 @@ form.addEventListener('submit', (e) => {
         window.location.reload();
     }
 });
+
+function showLoader() {
+    loader.style.display = 'block';
+}
+
+function hideLoader() {
+    loader.style.display = 'none';
+}
