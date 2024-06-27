@@ -39,6 +39,12 @@ This project uses The Movie Database (TMDb) API. You need to obtain an API key f
 1. Enter a movie title in the search bar and press Enter or click the search icon.
 2. Click on a movie card to see more details including the movie overview.
 
+
+## Live Demo
+
+[Link to live demo](https://yassine4real.github.io/Movie-App-JS/) 
+
+
 ## Authors :black_nib:
 
 - **Yassine Abbou** <[yassine4real](https://github.com/yassine4real)>
