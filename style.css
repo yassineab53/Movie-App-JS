@@ -127,23 +127,21 @@ main {
 }
 
 .overview {
-    background-color: var(--white-color);
-    color: var(--primary-color);
-    padding: 1rem;
+    background-color: #fff;
+    padding: 2rem;
     position: absolute;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     right: 0;
-    max-height: 60%;
+    max-height: 100%;
+    transform: translateY(101%);
     overflow-y: auto;
-    transform: translateY(100%);
     transition: transform 0.3s ease-in;
 }
 
 .movie:hover .overview {
     transform: translateY(0);
 }
-
 .loader {
     display: none;
     position: fixed;
