@@ -28,6 +28,11 @@ This project uses The Movie Database (TMDb) API. You need to obtain an API key f
    ```bash
    git clone https://github.com/your-username/movie-app.git
    cd movie-app
-2. Replace YOUR_API_KEY in script.js with your TMDb API key.
+2. Replace `YOUR_API_KEY` in script.js with your TMDb API key.
 
 3. Open `index.html` in your web browser.
+
+## Usage
+
+1. Enter a movie title in the search bar and press Enter or click the search icon.
+2. Click on a movie card to see more details including the movie overview.
