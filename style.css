@@ -32,3 +32,12 @@ header {
     padding: 0.5rem 1rem;
     color: #fff;
 }
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
