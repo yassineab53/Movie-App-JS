@@ -3,16 +3,22 @@
 :root {
     --primary-color: #22254b;
     --secondary-color: #373b69;
+    --white-color: #ffffff;
+    --green-color: lightgreen;
+    --orange-color: orange;
+    --red-color: red;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    color: var(--white-color);
 }
 
 header {
@@ -22,15 +28,13 @@ header {
     background-color: var(--secondary-color);
 }
 
-
 .search {
     background-color: transparent;
     border: 2px solid var(--primary-color);
     border-radius: 50px;
-    font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .search::placeholder {
@@ -42,11 +46,11 @@ header {
     background-color: var(--primary-color);
 }
 
-
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
 }
 
 .movie {
@@ -54,57 +58,60 @@ main {
     margin: 1rem;
     background-color: var(--secondary-color);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
+    border-radius: 5px;
     overflow: hidden;
-    border-radius: 3px;
+    transition: transform 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
 }
 
 .movie img {
     width: 100%;
+    display: block;
 }
 
 .movie-info {
-    color: #eee;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.2rem;
-    padding: 0.5rem 1rem 1rem;
-    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    color: var(--white-color);
 }
 
 .movie-info h3 {
-    margin-top: 0;
+    margin: 0;
 }
 
 .movie-info span {
-    background-color: var(--primary-color);
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
 }
 
 .movie-info span.green {
-    color: lightgreen;
+    color: var(--green-color);
 }
 
 .movie-info span.orange {
-    color: orange;
+    color: var(--orange-color);
 }
 
 .movie-info span.red {
-    color: red;
+    color: var(--red-color);
 }
 
 .overview {
-    background-color: #fff;
+    background-color: var(--white-color);
+    color: var(--primary-color);
     padding: 2rem;
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     max-height: 100%;
-    transform: translateY(101%);
+    transform: translateY(100%);
     overflow-y: auto;
     transition: transform 0.3s ease-in;
 }
