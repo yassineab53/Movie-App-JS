@@ -28,3 +28,6 @@ This project uses The Movie Database (TMDb) API. You need to obtain an API key f
    ```bash
    git clone https://github.com/your-username/movie-app.git
    cd movie-app
+2. Replace YOUR_API_KEY in script.js with your TMDb API key.
+
+3. Open `index.html` in your web browser.
