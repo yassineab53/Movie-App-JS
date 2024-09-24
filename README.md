@@ -47,5 +47,5 @@ This project uses The Movie Database (TMDb) API. You need to obtain an API key f
 
 ## Authors :black_nib:
 
-- **Yassine Abbou** <[yassine4real](https://github.com/yassineab53)>
+- **Yassine Abbou** <[yassineab53](https://github.com/yassineab53)>
 
