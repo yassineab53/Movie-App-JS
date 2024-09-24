@@ -42,10 +42,10 @@ This project uses The Movie Database (TMDb) API. You need to obtain an API key f
 
 ## Live Demo
 
-[Link to live demo](https://yassine4real.github.io/Movie-App-JS/) 
+[Link to live demo](https://yassineab53.github.io/Movie-App-JS/) 
 
 
 ## Authors :black_nib:
 
-- **Yassine Abbou** <[yassine4real](https://github.com/yassine4real)>
+- **Yassine Abbou** <[yassine4real](https://github.com/yassineab53)>
 
